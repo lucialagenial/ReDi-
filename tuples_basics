@@ -1,0 +1,80 @@
+
+# Homework: In five minutes present:
+# What is a tuples
+# How we can use it and how to read data in tuples
+# Tuples, Sets, Scopes (Global and local variables)
+
+
+# Tuples
+
+# Tuples are used to store multiple items in a single variable.
+# You want to introduce immutability.
+# Tuple is one of 4 built-in data types in Python used to store collections of data,
+# the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+
+# Tuples are also similar to lists. It's also an ordered collection of items.
+# the only differences of the two is that you CANNOT change the elements on Tuples.
+# so if you are sure that your sequence won't change until the end of the program Tuples are what you need.
+
+# To create a tuple you use parenthesis (round brackets) and commas to separate the elements. E.g.:
+
+teachers_tuple = ("Karen", "Nouran", "Diana", "Lorik", "Rita", "Rebecca")
+print(teachers_tuple)
+
+# Option 2
+
+students_tuple = tuple(("Anya", "Ayesha", "Eka", "Elle", "Hager", "Lisa", "Lucia", "Mara", "Ola", "Roya", "Sally", "Suelen", "Titi", "Zohreh"))
+print(students_tuple)
+
+# Option 3: Tuple packing (creating a tuple without the parenthesis)
+
+my_tuple = 3, 4.5, "dog"
+print(my_tuple)
+
+# Creating a tuple with one element is a bit tricky:
+
+baby_str = ("hello")
+print(baby_str)
+print(type(baby_str))
+
+baby_tuple = ("hello",)
+print(baby_tuple)
+print(type(baby_tuple))
+
+baby_tuple2 = "hallo",  # Parenthesis are optional
+print(baby_tuple2)
+print(type(baby_tuple2))
+
+# Tuple items are ordered, unchangeable, and allow duplicate values.
+# Tuple items are indexed, the first item has index [0], the second item has index [1] etc.
+# To access elements on a tuple use the index number:
+
+print(teachers_tuple[2])
+
+print(students_tuple[2:7])
+
+# We can also access the elements of a tuple with a for loop:
+
+for teacher in teachers_tuple:
+    print("Coding teacher", teacher)
+
+# Length - To determine how many items a tuple has, use the len() function:
+
+print(len(teachers_tuple))
+print(len(students_tuple))
+
+# Data Types: Tuple items can be of any data types: string, int, and boolean.
+# They can also contain different data types:
+
+tuple1 = ("abc", 34, True, 40, "female")
+
+# Type : From Python's perspective, tuples are defined as objects with data types 'tuples':
+
+print(type(tuple1))
+
+print(type(my_tuple))
+
+# Deleting a tuple:
+
+#del tuple1 # don't forget to remove the "#" before the sentence. 
+#print(tuple1)
